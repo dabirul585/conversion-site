@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<title> Weight Converter</title>
+<body>
+
+<h2>Weight Converter</h2>
+
+<p>Type a value in the Kilograms field to convert the value to Pounds:</p>
+
+<p>
+  <label>Kilograms</label>
+  <input id="inputKilograms" type="number" placeholder="Kilograms" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+</p>
+<p>Pounds: <span id="outputPounds"></span></p>
+
+<script>
+function weightConverter(valNum) {
+  document.getElementById("outputPounds").innerHTML=valNum*2.2046;
+}
+
+<p>Type a value in the Kilograms field to convert the value to Grams:</p>
+
+<p>
+  <label>Kilograms</label>
+  <input id="inputKilograms" type="number" placeholder="Kilograms" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+</p>
+
+<p>Grams: <span id="outputGrams"></span></p>
+
+<script>
+function weightConverter(valNum) {
+  document.getElementById("outputGrams").innerHTML=valNum*1000;
+}
+</script>
+
+<p>Type a value in the Grams field to convert the value to Pounds:</p>
+
+<p>
+  <label>Grams</label>
+  <input id="inputGrams" type="number" placeholder="Grams" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+</p>
+<p>Pounds: <span id="outputPounds"></span></p>
+
+<script>
+function weightConverter(valNum) {
+  document.getElementById("outputPounds").innerHTML=valNum*0.0022046;
+}
+
+<p>Type a value in the Inches field to convert the value to Feet:</p>
+
+<p>
+  <label>Inches</label>
+  <input id="inputInches" type="number" placeholder="Inches" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+</p>
+<p> Feet: <span id="outputFeet"></span></p>
+
+<script>
+function weightConverter(valNum) {
+  document.getElementById("outputFeet").innerHTML=valNum*16;
+}
+</script>
+
+<p>Type a value in the Feet field to convert the value to Inches:</p>
+
+<p>
+  <label>Feet</label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+</p>
+<p>Inches: <span id="outputInches"></span></p>
+
+<script>
+function weightConverter(valNum) {
+  document.getElementById("outputInches").innerHTML=valNum*16;
+}
+
+
+</script>
+
+</body>
+</html>
